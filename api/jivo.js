@@ -20,7 +20,7 @@ export async function POST(request) {
     }
 
     // ====== ЗАМЕНИТЕ ЭТИ КЛЮЧИ НА СВОИ! ======
-    const OPENAI_API_KEY = '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';
+    const OPENAI_API_KEY = '';
     const JIVO_API_KEY = 'ваш_ключ_Jivo';
 
     // 1. Запрос к OpenAI
