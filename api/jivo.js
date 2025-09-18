@@ -20,7 +20,7 @@ export async function POST(request) {
     }
 
     // ====== ЗАМЕНИТЕ ЭТИ КЛЮЧИ НА СВОИ! ======
-    const OPENAI_API_KEY = 'sk-...ваш_ключ_OpenAI...';
+    const OPENAI_API_KEY = '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';
     const JIVO_API_KEY = 'ваш_ключ_Jivo';
 
     // 1. Запрос к OpenAI
@@ -57,10 +57,10 @@ export async function POST(request) {
 
     console.log('Ответ AI:', ai_reply);
 
-    // 2. Отправляем ответ обратно в Jivo
-    // (Это упрощенная версия - в реальности нужно использовать Jivo API)
+     // 2. Пока просто возвращаем ответ AI (Jivo API настроим позже)
+    console.log('Ответ для Jivo:', ai_reply);
     return NextResponse.json({
-      status: 'success',
+      status: 'success', 
       message: ai_reply,
       client_id: client_id,
       chat_id: chat_id
